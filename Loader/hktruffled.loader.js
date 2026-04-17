@@ -151,7 +151,7 @@ function createUnityInstance(e, r, n) {
     }
 	// Force Unity to render at 60% internal resolution
 	Object.defineProperty(window, "devicePixelRatio", {
-		get: () => 0.8 //================================================RESOLUTION THINGY
+		get: () => 0.65 //================================================RESOLUTION THINGY
 	});
     n = n || function() {};
     var c = {
