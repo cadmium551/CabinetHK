@@ -155,6 +155,11 @@ function createUnityInstance(e, r, n) {
     }
     n = n ||
     function() {};
+//EXPERIMENTAL
+    Object.defineProperty(window, "devicePixelRatio", {
+		get: () => 0.65 //================================================RESOLUTION THINGY
+	});
+    
     var c = {
         canvas: e,
         webglContextAttributes: {
